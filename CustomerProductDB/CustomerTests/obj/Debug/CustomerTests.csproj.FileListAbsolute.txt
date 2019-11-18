@@ -1,0 +1,14 @@
+C:\Users\Student\Desktop\Dane Woods\Lab6 234N\CustomerProductDB\CustomerTests\bin\Debug\CustomerTests.dll
+C:\Users\Student\Desktop\Dane Woods\Lab6 234N\CustomerProductDB\CustomerTests\bin\Debug\CustomerTests.pdb
+C:\Users\Student\Desktop\Dane Woods\Lab6 234N\CustomerProductDB\CustomerTests\bin\Debug\CustomerProductPropsClasses.dll
+C:\Users\Student\Desktop\Dane Woods\Lab6 234N\CustomerProductDB\CustomerTests\bin\Debug\nunit.framework.dll
+C:\Users\Student\Desktop\Dane Woods\Lab6 234N\CustomerProductDB\CustomerTests\bin\Debug\ToolsCSharp.dll
+C:\Users\Student\Desktop\Dane Woods\Lab6 234N\CustomerProductDB\CustomerTests\bin\Debug\CustomerProductPropsClasses.pdb
+C:\Users\Student\Desktop\Dane Woods\Lab6 234N\CustomerProductDB\CustomerTests\bin\Debug\nunit.framework.pdb
+C:\Users\Student\Desktop\Dane Woods\Lab6 234N\CustomerProductDB\CustomerTests\bin\Debug\nunit.framework.xml
+C:\Users\Student\Desktop\Dane Woods\Lab6 234N\CustomerProductDB\CustomerTests\bin\Debug\ToolsCSharp.pdb
+C:\Users\Student\Desktop\Dane Woods\Lab6 234N\CustomerProductDB\CustomerTests\obj\Debug\CustomerTests.csprojAssemblyReference.cache
+C:\Users\Student\Desktop\Dane Woods\Lab6 234N\CustomerProductDB\CustomerTests\obj\Debug\CustomerTests.csproj.CoreCompileInputs.cache
+C:\Users\Student\Desktop\Dane Woods\Lab6 234N\CustomerProductDB\CustomerTests\obj\Debug\CustomerTests.csproj.CopyComplete
+C:\Users\Student\Desktop\Dane Woods\Lab6 234N\CustomerProductDB\CustomerTests\obj\Debug\CustomerTests.dll
+C:\Users\Student\Desktop\Dane Woods\Lab6 234N\CustomerProductDB\CustomerTests\obj\Debug\CustomerTests.pdb
