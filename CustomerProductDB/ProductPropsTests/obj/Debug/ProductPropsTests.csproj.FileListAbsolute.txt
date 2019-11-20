@@ -1,0 +1,14 @@
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\ProductPropsTests\bin\Debug\ProductPropsTests.dll
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\ProductPropsTests\bin\Debug\ProductPropsTests.pdb
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\ProductPropsTests\bin\Debug\CustomerProductPropsClasses.dll
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\ProductPropsTests\bin\Debug\nunit.framework.dll
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\ProductPropsTests\bin\Debug\ToolsCSharp.dll
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\ProductPropsTests\bin\Debug\CustomerProductPropsClasses.pdb
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\ProductPropsTests\bin\Debug\nunit.framework.pdb
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\ProductPropsTests\bin\Debug\nunit.framework.xml
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\ProductPropsTests\bin\Debug\ToolsCSharp.pdb
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\ProductPropsTests\obj\Debug\ProductPropsTests.csprojAssemblyReference.cache
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\ProductPropsTests\obj\Debug\ProductPropsTests.csproj.CoreCompileInputs.cache
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\ProductPropsTests\obj\Debug\ProductPropsTests.csproj.CopyComplete
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\ProductPropsTests\obj\Debug\ProductPropsTests.dll
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\ProductPropsTests\obj\Debug\ProductPropsTests.pdb

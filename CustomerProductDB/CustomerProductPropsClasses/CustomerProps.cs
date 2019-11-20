@@ -78,12 +78,12 @@ namespace CustomerProductPropsClasses
         // props class can read in from xml
         public void SetState(DBDataReader dr)
         {
-            this.ID = (Int32)dr["EventID"];
+            this.ID = (Int32)dr["CustomerID"];
             this.name = dr["Name"].ToString();
             this.address = dr["Address"].ToString();
             this.city = dr["City"].ToString();
-            this.state = dr["State"].ToString();
-            this.zipcode = dr["ZipCode"].ToString();
+            this.state = dr["State"].ToString().Trim();
+            this.zipcode = dr["ZipCode"].ToString().Trim();
             this.ConcurrencyID = (Int32)dr["ConcurrencyID"];
         }
 
@@ -123,6 +123,5 @@ namespace CustomerProductPropsClasses
             return p;
         }
         #endregion
-
     }
 }

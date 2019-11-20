@@ -1,0 +1,11 @@
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\CustomerProductDBClasses\bin\Debug\CustomerProductDBClasses.dll
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\CustomerProductDBClasses\bin\Debug\CustomerProductDBClasses.pdb
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\CustomerProductDBClasses\bin\Debug\CustomerProductPropsClasses.dll
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\CustomerProductDBClasses\bin\Debug\ToolsCSharp.dll
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\CustomerProductDBClasses\bin\Debug\CustomerProductPropsClasses.pdb
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\CustomerProductDBClasses\bin\Debug\ToolsCSharp.pdb
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\CustomerProductDBClasses\obj\Debug\CustomerProductDBClasses.csprojAssemblyReference.cache
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\CustomerProductDBClasses\obj\Debug\CustomerProductDBClasses.csproj.CoreCompileInputs.cache
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\CustomerProductDBClasses\obj\Debug\CustomerProductDBClasses.csproj.CopyComplete
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\CustomerProductDBClasses\obj\Debug\CustomerProductDBClasses.dll
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\CustomerProductDBClasses\obj\Debug\CustomerProductDBClasses.pdb
