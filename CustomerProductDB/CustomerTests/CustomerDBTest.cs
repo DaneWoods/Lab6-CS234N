@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using NUnit.Framework;
 using CustomerProductDBClasses;
 using CustomerProductPropsClasses;
+using System.Data;
+using DBCommand = System.Data.SqlClient.SqlCommand;
 
 namespace CustomerTests
 {
@@ -16,9 +18,13 @@ namespace CustomerTests
         CustomerDB db;
         private string dataSource = "Data Source=1912019-C18067;Initial Catalog=MMABooksUpdated;Integrated Security=True";
         [SetUp]
-        public void SetUp()
+        public void TestResetDatabase()
         {
             db = new CustomerDB(dataSource);
+            DBCommand command = new DBCommand();
+            command.CommandText = "usp_testingResetData";
+            command.CommandType = CommandType.StoredProcedure;
+            db.RunNonQueryProcedure(command);
         }
 
         [Test]
@@ -63,13 +69,19 @@ namespace CustomerTests
         [Test]
         public void TestDelete()
         {
-
+            CustomerProps props = (CustomerProps)db.Retrieve(696);
+            db.Delete(props);
+            List<CustomerProps> propsList = (List<CustomerProps>)db.RetrieveAll(db.GetType());
+            Assert.AreEqual(695, propsList.Count);
         }
 
         [Test]
         public void TestUpdate()
         {
-
+            CustomerProps props = (CustomerProps)db.Retrieve(696);
+            props.name = "Jeff Mgee";
+            db.Update(props);
+            Assert.AreEqual(props.name, )
         }
     }
 }

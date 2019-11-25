@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductPropsTests", "Produc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerProductDBClasses", "CustomerProductDBClasses\CustomerProductDBClasses.csproj", "{F2EE9A74-E8E7-4767-BEB4-C9103041AC1F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerProductClasses", "CustomerProductClasses\CustomerProductClasses.csproj", "{95E95AB5-8480-49DA-AD0E-3B2CC1A39406}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{F2EE9A74-E8E7-4767-BEB4-C9103041AC1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2EE9A74-E8E7-4767-BEB4-C9103041AC1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2EE9A74-E8E7-4767-BEB4-C9103041AC1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95E95AB5-8480-49DA-AD0E-3B2CC1A39406}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95E95AB5-8480-49DA-AD0E-3B2CC1A39406}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95E95AB5-8480-49DA-AD0E-3B2CC1A39406}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95E95AB5-8480-49DA-AD0E-3B2CC1A39406}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
