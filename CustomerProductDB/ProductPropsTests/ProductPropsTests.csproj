@@ -47,13 +47,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProductDBTests.cs" />
     <Compile Include="ProductPropsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CustomerProductClasses\CustomerProductClasses.csproj">
+      <Project>{95e95ab5-8480-49da-ad0e-3b2cc1a39406}</Project>
+      <Name>CustomerProductClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CustomerProductDBClasses\CustomerProductDBClasses.csproj">
+      <Project>{f2ee9a74-e8e7-4767-beb4-c9103041ac1f}</Project>
+      <Name>CustomerProductDBClasses</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CustomerProductPropsClasses\CustomerProductPropsClasses.csproj">
       <Project>{ca371924-f2a8-4a81-bef3-d7d05641569c}</Project>
       <Name>CustomerProductPropsClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrameworkLibrary\ToolsCSharp\ToolsCSharp.csproj">
+      <Project>{7f06622a-845c-4b38-9e3f-521189851bbd}</Project>
+      <Name>ToolsCSharp</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

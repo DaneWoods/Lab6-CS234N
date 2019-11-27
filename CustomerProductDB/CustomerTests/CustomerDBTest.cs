@@ -79,9 +79,13 @@ namespace CustomerTests
         public void TestUpdate()
         {
             CustomerProps props = (CustomerProps)db.Retrieve(696);
+            Console.WriteLine(props.name);
             props.name = "Jeff Mgee";
             db.Update(props);
-            Assert.AreEqual(props.name, )
+            CustomerProps updatedProps = (CustomerProps)db.Retrieve(696);
+            Assert.AreEqual(props.name, updatedProps.name);
+            Assert.AreEqual(2, props.ConcurrencyID);
+            Console.WriteLine(props.name);
         }
     }
 }

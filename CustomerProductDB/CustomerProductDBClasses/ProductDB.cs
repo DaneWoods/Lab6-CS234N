@@ -21,26 +21,26 @@ using DBDataAdapter = System.Data.SqlClient.SqlDataAdapter;
 
 namespace CustomerProductDBClasses
 {
-    public class CustomerDB : DBBase, IReadDB, IWriteDB
+    public class ProductDB : DBBase, IReadDB, IWriteDB
     {
         #region Constructors
 
-        public CustomerDB() : base() { }
-        public CustomerDB(string cnString) : base(cnString) { }
-        public CustomerDB(DBConnection cn) : base(cn) { }
+        public ProductDB() : base() { }
+        public ProductDB(string cnString) : base(cnString) { }
+        public ProductDB(DBConnection cn) : base(cn) { }
 
         #endregion
 
         public IBaseProps Retrieve(object key)
         {
             DBDataReader data = null;
-            CustomerProps props = new CustomerProps();
+            ProductProps props = new ProductProps();
             DBCommand command = new DBCommand();
 
-            command.CommandText = "usp_CustomerSelect";
+            command.CommandText = "usp_ProductSelect";
             command.CommandType = CommandType.StoredProcedure;
-            command.Parameters.Add("@CustomerID", SqlDbType.Int);
-            command.Parameters["@CustomerID"].Value = (Int32)key;
+            command.Parameters.Add("@ProductID", SqlDbType.Int);
+            command.Parameters["@ProductID"].Value = (Int32)key;
 
             try
             {
@@ -73,18 +73,18 @@ namespace CustomerProductDBClasses
 
         public object RetrieveAll(Type type)
         {
-            List<CustomerProps> list = new List<CustomerProps>();
+            List<ProductProps> list = new List<ProductProps>();
             DBDataReader reader = null;
-            CustomerProps props;
+            ProductProps props;
 
             try
             {
-                reader = RunProcedure("usp_CustomerSelectAll");
+                reader = RunProcedure("usp_ProductSelectAll");
                 if (!reader.IsClosed)
                 {
                     while (reader.Read())
                     {
-                        props = new CustomerProps();
+                        props = new ProductProps();
                         props.SetState(reader);
                         list.Add(props);
                     }
@@ -108,30 +108,29 @@ namespace CustomerProductDBClasses
         public IBaseProps Create(IBaseProps p)
         {
             int rowsAffected = 0;
-            CustomerProps props = (CustomerProps)p;
+            ProductProps props = (ProductProps)p;
 
             DBCommand command = new DBCommand();
-            command.CommandText = "usp_CustomerCreate";
+            command.CommandText = "usp_ProductCreate";
             command.CommandType = CommandType.StoredProcedure;
-            command.Parameters.Add("@CustomerID", SqlDbType.Int);
-            command.Parameters.Add("@Name", SqlDbType.VarChar);
-            command.Parameters.Add("@Address", SqlDbType.VarChar);
-            command.Parameters.Add("@City", SqlDbType.VarChar);
-            command.Parameters.Add("@State", SqlDbType.Char);
-            command.Parameters.Add("@ZipCode", SqlDbType.Char);
+            command.Parameters.Add("@ProductID", SqlDbType.Int);
+            command.Parameters.Add("@ProductCode", SqlDbType.Char);
+            command.Parameters.Add("@Description", SqlDbType.VarChar);
+            command.Parameters.Add("@UnitPrice", SqlDbType.Money);
+            command.Parameters.Add("@OnHandQuantity", SqlDbType.Int);
             command.Parameters[0].Direction = ParameterDirection.Output;
-            command.Parameters["@Name"].Value = props.name;
-            command.Parameters["@Address"].Value = props.address;
-            command.Parameters["@City"].Value = props.city;
-            command.Parameters["@State"].Value = props.state;
-            command.Parameters["@ZipCode"].Value = props.zipcode;
+            command.Parameters["@ProductCode"].Value = props.productCode;
+            command.Parameters["@Description"].Value = props.description;
+            command.Parameters["@UnitPrice"].Value = props.unitPrice;
+            command.Parameters["@OnHandQuantity"].Value = props.onHandQuantity;
+
 
             try
             {
                 rowsAffected = RunNonQueryProcedure(command);
                 if (rowsAffected == 1)
                 {
-                    props.ID = (int)command.Parameters[0].Value;
+                    props.productID = (int)command.Parameters[0].Value;
                     props.ConcurrencyID = 1;
                     return props;
                 }
@@ -152,15 +151,15 @@ namespace CustomerProductDBClasses
 
         public bool Delete(IBaseProps p)
         {
-            CustomerProps props = (CustomerProps)p;
+            ProductProps props = (ProductProps)p;
             int rowsAffected = 0;
 
             DBCommand command = new DBCommand();
-            command.CommandText = "usp_CustomerDelete";
+            command.CommandText = "usp_ProductDelete";
             command.CommandType = CommandType.StoredProcedure;
-            command.Parameters.Add("@CustomerID", SqlDbType.Int);
+            command.Parameters.Add("@ProductID", SqlDbType.Int);
             command.Parameters.Add("@ConcurrencyID", SqlDbType.Int);
-            command.Parameters["@CustomerID"].Value = props.ID;
+            command.Parameters["@ProductID"].Value = props.productID;
             command.Parameters["@ConcurrencyID"].Value = props.ConcurrencyID;
 
             try
@@ -192,24 +191,22 @@ namespace CustomerProductDBClasses
         public bool Update(IBaseProps p)
         {
             int rowsAffected = 0;
-            CustomerProps props = (CustomerProps)p;
+            ProductProps props = (ProductProps)p;
 
             DBCommand command = new DBCommand();
-            command.CommandText = "usp_CustomerUpdate";
+            command.CommandText = "usp_ProductUpdate";
             command.CommandType = CommandType.StoredProcedure;
-            command.Parameters.Add("@CustomerID", SqlDbType.Int);
-            command.Parameters.Add("@Name", SqlDbType.VarChar);
-            command.Parameters.Add("@Address", SqlDbType.VarChar);
-            command.Parameters.Add("@City", SqlDbType.VarChar);
-            command.Parameters.Add("@State", SqlDbType.Char);
-            command.Parameters.Add("@ZipCode", SqlDbType.Char);
+            command.Parameters.Add("@ProductID", SqlDbType.Int);
+            command.Parameters.Add("@ProductCode", SqlDbType.Char);
+            command.Parameters.Add("@Description", SqlDbType.VarChar);
+            command.Parameters.Add("@UnitPrice", SqlDbType.Money);
+            command.Parameters.Add("@OnHandQuantity", SqlDbType.Int);
             command.Parameters.Add("@ConcurrencyID", SqlDbType.Int);
-            command.Parameters["@CustomerID"].Value = props.ID;
-            command.Parameters["@Name"].Value = props.name;
-            command.Parameters["@Address"].Value = props.address;
-            command.Parameters["@City"].Value = props.city;
-            command.Parameters["@State"].Value = props.state;
-            command.Parameters["@ZipCode"].Value = props.zipcode;
+            command.Parameters["@ProductID"].Value = props.productID;
+            command.Parameters["@ProductCode"].Value = props.productCode;
+            command.Parameters["@Description"].Value = props.description;
+            command.Parameters["@UnitPrice"].Value = props.unitPrice;
+            command.Parameters["@OnHandQuantity"].Value = props.onHandQuantity;
             command.Parameters["@ConcurrencyID"].Value = props.ConcurrencyID;
 
             try

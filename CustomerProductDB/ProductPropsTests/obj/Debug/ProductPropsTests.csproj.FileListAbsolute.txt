@@ -12,3 +12,7 @@ C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\ProductPropsTests\obj\Deb
 C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\ProductPropsTests\obj\Debug\ProductPropsTests.csproj.CopyComplete
 C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\ProductPropsTests\obj\Debug\ProductPropsTests.dll
 C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\ProductPropsTests\obj\Debug\ProductPropsTests.pdb
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\ProductPropsTests\bin\Debug\CustomerProductClasses.dll
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\ProductPropsTests\bin\Debug\CustomerProductDBClasses.dll
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\ProductPropsTests\bin\Debug\CustomerProductClasses.pdb
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\ProductPropsTests\bin\Debug\CustomerProductDBClasses.pdb
