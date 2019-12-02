@@ -49,12 +49,17 @@
   <ItemGroup>
     <Compile Include="CustomerDBTest.cs" />
     <Compile Include="CustomerPropsTests.cs" />
+    <Compile Include="CustomerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CustomerProductClasses\CustomerProductClasses.csproj">
+      <Project>{95e95ab5-8480-49da-ad0e-3b2cc1a39406}</Project>
+      <Name>CustomerProductClasses</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CustomerProductDBClasses\CustomerProductDBClasses.csproj">
       <Project>{f2ee9a74-e8e7-4767-beb4-c9103041ac1f}</Project>
       <Name>CustomerProductDBClasses</Name>

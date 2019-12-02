@@ -28,3 +28,5 @@ C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\CustomerTests\obj\Debug\C
 C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\CustomerTests\obj\Debug\CustomerTests.pdb
 C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\CustomerTests\bin\Debug\CustomerProductDBClasses.dll
 C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\CustomerTests\bin\Debug\CustomerProductDBClasses.pdb
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\CustomerTests\bin\Debug\CustomerProductClasses.dll
+C:\Users\Student\Desktop\Lab6-CS234N\CustomerProductDB\CustomerTests\bin\Debug\CustomerProductClasses.pdb

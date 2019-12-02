@@ -73,6 +73,14 @@ namespace ProductPropsTests
         }
 
         [Test]
+        public void TestInvalidDelete()
+        {
+            ProductProps props = (ProductProps)db.Retrieve(16);
+            props.ConcurrencyID += 1;
+            Assert.Throws<Exception>(() => db.Delete(props));
+        }
+
+        [Test]
         public void TestUpdate()
         {
             ProductProps props = (ProductProps)db.Retrieve(16);
@@ -83,6 +91,16 @@ namespace ProductPropsTests
             Assert.AreEqual(props.productCode.Trim(), updatedProps.productCode.Trim());
             Assert.AreEqual(2, props.ConcurrencyID);
             Console.WriteLine(props.productCode.Trim());
+        }
+
+        [Test]
+        public void TestInvalidUpdate()
+        {
+            ProductProps props = (ProductProps)db.Retrieve(16);
+            Console.WriteLine(props.productCode.Trim());
+            props.productCode = "AM27";
+            props.ConcurrencyID += 1;
+            Assert.Throws<Exception>(() => db.Update(props));
         }
     }
 }

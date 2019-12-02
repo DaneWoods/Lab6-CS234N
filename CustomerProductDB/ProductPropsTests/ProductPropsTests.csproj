@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="ProductDBTests.cs" />
     <Compile Include="ProductPropsTests.cs" />
+    <Compile Include="ProductTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
